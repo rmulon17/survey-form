@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform </p>
+    </header>
+
+    <main>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" required placeholder="Enter your name">
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" required placeholder="Enter your Email">
+
+
+            <label for="number" id="number-label">Age <span>(optional)</span></label>
+            <input type="number" id="number" min="16" max="120" placeholder="Age">
+
+
+            <label for="dropdown">Which option best describes your current role?</label>
+            <select name="current-role" id="dropdown" required placeholder="Select current role">
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time-job">Full Time Job</option>
+                <option value="full-time-learner">Full Time Learner</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+
+            <p>Would you recommend freeCodeCamp to a friend?</p>
+            <label for=""><input type="radio" name="choice">Definitely</label>
+            <label for=""><input type="radio" name="choice">Maybe</label>
+            <label for=""><input type="radio" name="choice">Not sure</label>
+
+            <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+            <div>
+                <input type="checkbox" name="improvement" id="check1" value="front-end-projects">
+                <label for="check1" class="inline">Front-end Projects</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="improvement" id="check2" value="back-end-projects">
+                <label for="check2" class="inline">Back-end Projects</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="improvement" id="check3" value="data-visualization">
+                <label for="check3" class="inline">Data Visualization</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="improvement" id="check4" value="challenges">
+                <label for="check4" class="inline">Challenges</label>
+            </div>
+
+            <div>
+                <input type="checkbox" name="improvement" id="check5" value="open-source-community">    
+                <label for="check5" class="inline">Open Source Community</label>
+            </div>
+
+            
+            <p>Any comments or suggestions?</p>
+            <textarea name="adicional-info" id="" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --blue: #C4DDFF;
+    --blue2: #7FB5FF;
+    --dark-blue: #001D6E;
+    --light-pink: #FEE2C5;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    background-color: #001D6E;
+    color: #FEE2C5;
+
+    padding-bottom: 2rem;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 3rem;
+}
+
+P {
+    font-size: 1.8rem;
+}
+
+header p {
+    margin-bottom: 2rem;
+}
+
+/* FORM */
+form {
+    width: 50%;
+    min-width: 300px;
+
+    margin: 0 auto;
+    padding: 2rem 2rem 3rem;
+    border-radius: 0.8rem;
+    
+    background-color: #7FB5FF;
+}
+
+span {
+    font-size: 1.4rem;
+}
+
+form p {
+    font-weight: 700;
+}
+
+label, input {
+    letter-spacing: 0.1rem;
+
+}
+
+label, form p {
+    margin-bottom: 1rem;
+    color: #001D6E;
+
+}
+
+label {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+input[type='text'], input[type='number'], select{
+    min-height: 2.5rem;
+}
+
+input, select, textarea {
+    font-size: 1.5rem;
+    width: 80%;
+}
+
+
+input, select {
+    margin-bottom: 2rem;
+}
+
+select {
+    padding: 0.2rem 0;
+}
+
+
+input[type='radio'], input[type='checkbox'] {
+    width: unset;
+    vertical-align: 10%;
+    margin-right: 0.7rem;
+}
+
+.inline {
+    display: inline-block;
+}
+
+form div:last-of-type {
+    margin-bottom: 1.2rem;
+}
+
+textarea {
+    margin-bottom: 3.5rem;
+}
+
+input[type='submit'] {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    padding-block: 1rem;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 700;
+    
+    cursor: pointer;
+
+    background-color: #001D6E;
+    color: #FEE2C5;
+}
+
+input[type='submit']:hover {
+    background-color: #FEE2C5;
+    color: #001D6E;
+}
